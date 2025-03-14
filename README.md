@@ -1,7 +1,6 @@
 # AI-health-assistant
 🌿 Natural health AI assistant app 🤖 🗣️ Voice consultations &amp; personalized recommendations 🌱 📱 Symptom checker &amp; plant identification 📸 🧠 AI-powered natural remedies &amp; health tracking 📊 🔔 Medicine reminders &amp; emergency detection 🚨 👩‍⚕️ Connect with herbalists &amp; track your wellness journey 🌻
-
-![Capture d'écran 2025-03-14 163715](https://github.com/user-attachments/assets/fcf20ffa-a103-4227-9a13-0baeefc723f6)
+![Capture d'écran 2025-03-14 164526](https://github.com/user-attachments/assets/d15502b0-c753-432f-9b87-7d55ed29e8f2)
 ## Collaboration Guidelines
 
 ### Getting Started
