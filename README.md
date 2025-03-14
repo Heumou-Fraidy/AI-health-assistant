@@ -20,4 +20,3 @@
 2. Get updates from the original repository: `git fetch upstream`
 3. Merge updates into your fork: `git merge upstream/main`
 4. Push updates to your fork: `git push origin main`
->>>>>>> 57e5cb8cc5027d51323b3a68c456d76c2188ffea
