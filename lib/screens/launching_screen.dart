@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ai_health_assistant/theme/app_colors.dart';
 
 class LaunchingScreen extends StatelessWidget {
-  const LaunchingScreen({Key? key}) : super(key: key);
+  const LaunchingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
