@@ -1,8 +1,10 @@
+import 'package:ai_health_assistant/widgets/navigation_manager.dart';
 import 'package:flutter/material.dart';
-import 'screens/launching_screen.dart';
+import 'package:ai_health_assistant/theme/app_theme.dart';
+import 'package:ai_health_assistant/screens/splash/splash_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,10 +15,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Natural Health AI',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
-      home: const LaunchingScreen(),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.system,
+      home: const SplashScreen(),
     );
   }
 }
+
