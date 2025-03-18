@@ -5,7 +5,8 @@ import 'package:ai_health_assistant/widgets/auth/social_login_button.dart';
 import 'package:ai_health_assistant/widgets/auth/auth_button.dart';
 import 'package:ai_health_assistant/navigation/navigation_service.dart';
 import 'package:ai_health_assistant/screens/auth/sign_up_screen.dart';
-import 'package:ai_health_assistant/screens/home/home_screen.dart';
+import 'package:ai_health_assistant/screens/auth/forgot_password_screen.dart';
+import 'package:ai_health_assistant/screens/profile/profile_setup_screen.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({Key? key}) : super(key: key);
@@ -29,16 +30,20 @@ class _SignInScreenState extends State<SignInScreen> {
   void _handleSignIn() {
     // TODO: Implement authentication logic here
     
-    // Navigate to home screen after successful login
+    // Navigate to profile setup screen after successful login
     NavigationService.navigateAndRemoveUntil(
       context,
-      const HomeScreen(),
+      const ProfileSetupScreen(),
       transition: TransitionType.elegant,
     );
   }
 
   void _handleForgotPassword() {
-    // TODO: Implement forgot password logic
+    NavigationService.navigateTo(
+      context,
+      const ForgotPasswordScreen(),
+      transition: TransitionType.slide,
+    );
   }
 
   @override
@@ -71,7 +76,7 @@ class _SignInScreenState extends State<SignInScreen> {
               ),
               const SizedBox(height: 8),
               const Text(
-                "Login to Your Account to Continue your Courses",
+                "Login to Your Account",
                 style: TextStyle(
                   color: Colors.grey,
                   fontSize: 14,
@@ -196,7 +201,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       NavigationService.navigateTo(
                         context,
                         const SignUpScreen(),
-                        transition: TransitionType.slide,
+                        transition: TransitionType.fade,
                       );
                     },
                     child: const Text(

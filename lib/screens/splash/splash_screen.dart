@@ -3,7 +3,7 @@ import 'package:ai_health_assistant/navigation/navigation_service.dart';
 import 'package:ai_health_assistant/screens/onboarding/onboarding_screen.dart';
 import 'package:ai_health_assistant/theme/app_colors.dart';
 // Add import for shared preferences to check if onboarding is completed
-import 'package:ai_health_assistant/screens/auth/sign_in_screen.dart';
+//import 'package:ai_health_assistant/screens/auth/sign_in_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -38,23 +38,11 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         NavigationService.navigateWithReplacement(
           context, 
           const OnboardingScreen(),
-          transition: TransitionType.fade,
+          transition: TransitionType.slide,
         );
         
         // When you implement onboarding completion check, use this:
-        // bool onboardingCompleted = await _checkOnboardingStatus();
-        // if (onboardingCompleted) {
-        //   NavigationService.navigateWithReplacement(
-        //     context, 
-        //     const SignInScreen(),
-        //     transition: TransitionType.fade,
-        //   );
-        // } else {
-        //   NavigationService.navigateWithReplacement(
-        //     context, 
-        //     const OnboardingScreen(),
-        //     transition: TransitionType.fade,
-        //   );
+
         // }
       }
     });
@@ -83,26 +71,26 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                 'assets/images/logo.png',
                 width: screenSize.width * 0.3,
                 height: screenSize.width * 0.3,
-                errorBuilder: (_, __, ___) => _placeholder(screenSize.width * 0.3),
+                errorBuilder: (_, __, ___) => _placeholder(screenSize.width * 0.1),
               ),
               const SizedBox(height: 20),
               Text(
-                "Natural Health AI",
+                "Your Natural Health AI",
                 style: Theme.of(context).textTheme.displayLarge?.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(height: 40),
+              const SizedBox(height: 01),
               Padding(
-                padding: EdgeInsets.only(bottom: screenSize.height * 0.05),
+                padding: EdgeInsets.only(top: screenSize.height * 0.61),
                 child: Image.asset(
                   'assets/images/aii.png',
-                  width: screenSize.width * 0.4,
+                  width: screenSize.width * 0.3,
                   errorBuilder: (_, __, ___) => _textPlaceholder(),
                 ),
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 10),
               const CircularProgressIndicator(color: Colors.white),
             ],
           ),

@@ -16,8 +16,8 @@ class SocialLoginButton extends StatelessWidget {
       onTap: onPressed,
       borderRadius: BorderRadius.circular(12),
       child: Container(
-        width: 44,
-        height: 44,
+        width: 56, // Increased from 44
+        height: 56, // Increased from 44
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(12),
@@ -32,8 +32,8 @@ class SocialLoginButton extends StatelessWidget {
         child: Center(
           child: Image.asset(
             imagePath,
-            width: 24,
-            height: 24,
+            width: 32, // Increased from 24
+            height: 32, // Increased from 24
           ),
         ),
       ),
