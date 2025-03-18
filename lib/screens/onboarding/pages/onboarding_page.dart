@@ -44,19 +44,19 @@ class OnboardingPage extends StatelessWidget {
             height: double.infinity,
             fit: BoxFit.cover,
             errorBuilder: (context, error, stackTrace) => Container(
-              color: AppColors.primaryGreen.withOpacity(0.7),
+              color: AppColors.primaryGreen.withOpacity(0.9),
               child: const Center(
-                child: Icon(Icons.image_not_supported, size: 64, color: Colors.white),
+                child: Icon(Icons.healing, size: 64, color: Colors.white),
               ),
             ),
           ),
           
-          // Overlay
+           /* Overlay
           Container(
             width: double.infinity,
             height: double.infinity,
             color: Colors.black.withOpacity(0.5),
-          ),
+          ), */
           
           // Content
           Padding(
@@ -105,7 +105,7 @@ class OnboardingPage extends StatelessWidget {
                     fontSize: 28.0,
                     fontWeight: FontWeight.bold,
                   ),
-                  delay: const Duration(milliseconds: 400),
+                  delay: const Duration(milliseconds: 300),
                 ),
                 
                 const SizedBox(height: 12.0),
@@ -117,7 +117,7 @@ class OnboardingPage extends StatelessWidget {
                     color: Colors.white70,
                     fontSize: 16.0,
                   ),
-                  delay: const Duration(milliseconds: 600),
+                  delay: const Duration(milliseconds: 400),
                 ),
                 
                 const Spacer(),
@@ -138,7 +138,7 @@ class OnboardingPage extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: currentPage == index
                                   ? AppColors.accentGreen
-                                  : Colors.white.withOpacity(0.5),
+                                  : Colors.white.withOpacity(0.90),
                               borderRadius: BorderRadius.circular(2.0),
                             ),
                           ),

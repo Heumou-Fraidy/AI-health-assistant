@@ -66,7 +66,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ),
               const SizedBox(height: 8),
               const Text(
-                "Create an Account to Start your Courses",
+                "Create an Account to Start",
                 style: TextStyle(
                   color: Colors.grey,
                   fontSize: 14,

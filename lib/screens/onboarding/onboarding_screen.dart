@@ -16,13 +16,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   
   final List<OnboardingPageData> _pages = [
     OnboardingPageData(
-      backgroundImage: 'assets/images/fruits.png',
+      backgroundImage: 'assets/images/flower.png',
       title: 'WELCOME TO',
       subtitle: 'NATURAL HEALTH AI',
       description: 'Your AI-powered assistant for natural remedies',
     ),
     OnboardingPageData(
-      backgroundImage: 'assets/images/backgroundImage.png',
+      backgroundImage: 'assets/images/fruits.png',
       title: 'IDENTIFY',
       subtitle: 'MEDICINAL PLANTS\nWITH A SINGLE PHOTO',
       description: 'Take a picture of any plant and learn about its medicinal properties',
@@ -38,7 +38,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   void _nextPage() {
     if (_currentPage < _pages.length - 1) {
       _pageController.nextPage(
-        duration: const Duration(milliseconds: 500),
+        duration: const Duration(milliseconds: 700),
         curve: Curves.easeInOut,
       );
     } else {
